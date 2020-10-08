@@ -56,8 +56,10 @@ class FacadeMockTest {
 			Mockito.doReturn(oneDate).when(mockedEvent).getEventDate();
 			Mockito.when(dataAccess.createQuestion(Mockito.any(Event.class), Mockito.any(String.class),
 					Mockito.any(Integer.class))).thenThrow(QuestionAlreadyExist.class);
-
+			
+			Mockito.doThrow(QuestionAlreadyExist.class).when(dataAccess).createQuestion(Mockito.any(Event.class), Mockito.anyString(), Mockito.anyFloat());
 			// invoke System Under Test (sut)
+		
 			assertThrows(QuestionAlreadyExist.class, () -> sut.createQuestion(mockedEvent, queryText, betMinimum));
 
 		} catch (ParseException | QuestionAlreadyExist e) {
@@ -74,9 +76,9 @@ class FacadeMockTest {
 
 			// configure Mock
 			Mockito.doReturn(oneDate).when(mockedEvent).getEventDate();
-			Mockito.doReturn(new Question(queryText, betMinimum, mockedEvent)).when(dataAccess)
-					.createQuestion(Mockito.any(Event.class), Mockito.any(String.class), Mockito.any(Integer.class));
-
+			Question re= new Question(queryText, betMinimum, mockedEvent);
+			Mockito.doReturn(re).when(dataAccess).createQuestion(Mockito.any(Event.class), Mockito.anyString(), Mockito.anyFloat());
+			
 			// invoke System Under Test (sut)
 			Question q = sut.createQuestion(mockedEvent, queryText, betMinimum);
 

@@ -128,3 +128,74 @@ Type domain.Apuestas is not enhanced.
 [2020-10-08 13:50:08 #21 type.registry] 
 New type java.util.Vector<java.lang.Object>
 
+------------------------------------------------------------------------------------------------------------------------
+
+[2020-10-08 15:18:07 #1 store] 
+Database 'C:\Users\Mikel Iturria\git\Tercero\BetsPr1\Bets\Bets.odb' is opened by 8224@DESKTOP-S2ST51D
+
+[2020-10-08 15:18:07 #2 type.registry] 
+New type domain.Categoria
+
+[2020-10-08 15:18:07 #3 type] 
+Type domain.Categoria is not enhanced.
+
+[2020-10-08 15:18:07 #4 type.registry] 
+New type domain.Event
+
+[2020-10-08 15:18:07 #5 type.registry] 
+New type java.util.Vector<domain.Event>
+
+[2020-10-08 15:18:07 #6 type] 
+Type domain.Event is not enhanced.
+
+[2020-10-08 15:18:07 #7 type.registry] 
+New type domain.Question
+
+[2020-10-08 15:18:07 #8 type.registry] 
+New type java.util.Vector<domain.Question>
+
+[2020-10-08 15:18:07 #9 type] 
+Type domain.Question is not enhanced.
+
+[2020-10-08 15:18:07 #10 type.registry] 
+New type domain.Pronostico
+
+[2020-10-08 15:18:07 #11 type.registry] 
+New type java.util.Vector<domain.Pronostico>
+
+[2020-10-08 15:18:07 #12 type] 
+Type domain.Pronostico is not enhanced.
+
+[2020-10-08 15:18:07 #13 type.registry] 
+New type domain.Usuario
+
+[2020-10-08 15:18:07 #14 type] 
+Type domain.Usuario is not enhanced.
+
+[2020-10-08 15:18:07 #15 type.registry] 
+New type domain.Mensaje
+
+[2020-10-08 15:18:07 #16 type.registry] 
+New type java.util.Vector<domain.Mensaje>
+
+[2020-10-08 15:18:07 #17 type.registry] 
+New type domain.Apuestas
+
+[2020-10-08 15:18:07 #18 type.registry] 
+New type java.util.Vector<domain.Apuestas>
+
+[2020-10-08 15:18:07 #19 type] 
+Type domain.Mensaje is not enhanced.
+
+[2020-10-08 15:18:07 #20 type] 
+Type domain.Apuestas is not enhanced.
+
+[2020-10-08 15:18:07 #21 type.registry] 
+New type java.util.Vector<java.lang.Object>
+
+[2020-10-08 15:18:07 #22 store] 
+Database 'C:\Users\Mikel Iturria\git\Tercero\BetsPr1\Bets\resources\bets.temp' has been recovered (tr. 11-18)
+
+[2020-10-08 15:18:07 #23 store] 
+Database 'C:\Users\Mikel Iturria\git\Tercero\BetsPr1\Bets\resources\bets.temp' is opened by 8224@DESKTOP-S2ST51D
+
