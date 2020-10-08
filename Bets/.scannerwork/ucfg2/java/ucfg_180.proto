@@ -1,0 +1,16 @@
+
+3domain.Usuario#getFechaNacimiento()Ljava/util/Date;P
+FC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Usuario.java8 8("1*Þ
+1P
+FC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Usuario.java9	 9(š
+—
+P
+FC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Usuario.java9	 9(
+%0java.util.Date"__id*'*%
+domain.Usuario"
+fechaNacimiento"j
+P
+FC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Usuario.java9 9(
+
+%0java.util.DateB
+domain.Usuario

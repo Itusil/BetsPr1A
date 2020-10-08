@@ -1,0 +1,92 @@
+
+(domain.Event#equals(Ljava/lang/Object;)ZP
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.javaâ â("startingBlock*±
+2P
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.javaí
+ í("Z
+P
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.javaí í(
+""*®
+3P
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.javaê ê(ç
+ä
+P
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.javaê ê(
+otherdomain.Event"__id*
+
+objjava.lang.Objectó
+î
+P
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.javaë ë(
+%2java.lang.Integer"__id*!*
+domain.Event"
+eventNumberû
+õ
+P
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.javaë ë(&
+%3java.lang.Integer"__id*(*&
+
+otherdomain.Event"
+eventNumber*
+2
+1*ê
+startingBlockP
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.javaâ â("ö
+ó
+P
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.javaà à(
+
+%4"
+__annotate*
+java.lang.Override*
+
+objjava.lang.ObjectÑ
+Å
+P
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.javaâ â(!
+objjava.lang.Object"__annotation*
+
+%4*	
+5
+6
+8*±
+4P
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.javaè
+ è("Z
+P
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.javaè è(
+""*‹
+5P
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.javaé é(∏µ
+P
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.javaé é(
+%0java.lang.Class",java.lang.Object#getClass()Ljava/lang/Class;*
+domain.Event2
+getClass()¡æ
+P
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.javaé é("
+%1java.lang.Class",java.lang.Object#getClass()Ljava/lang/Class;*
+
+objjava.lang.Object2
+getClass()*
+3
+4*±
+6P
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.javaç
+ ç("Z
+P
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.javaç ç(
+""*±
+8P
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.javaã
+ ã("Z
+P
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.javaã ã(
+""*±
+1P
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.javaì	 ì("Z
+P
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.javaì ì(
+"":
+objjava.lang.ObjectB
+domain.Event

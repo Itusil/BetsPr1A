@@ -1,0 +1,81 @@
+
+qbusinessLogic.BLFacadeImplementation#getEventsCategoryMonth(Ljava/util/Date;Ldomain/Categoria;)Ljava/util/Vector;h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaÜ Ü(+"startingBlock*¤
+startingBlockh
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaÜ+ Ü(E±
+®
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaÛ Û(
+
+%4"
+__annotate*
+java.lang.Override*
+
+datejava.util.Date›
+˜
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaÜ1 Ü(5
+datejava.util.Date"__annotation*
+
+%4²
+¯
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaÛ Û(
+
+%5"
+__annotate*
+java.lang.Override*
+
+catdomain.Categoriaœ
+™
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaÜA Ü(D
+catdomain.Categoria"__annotation*
+
+%5*
+1*ƒ
+1h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaÝ Ý()¡ž
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaÝ Ý('
+%0dataAccess.DataAccess"dataAccess.DataAccess³
+°
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaÝ Ý()
+%1"dataAccess.DataAccess#<init>()V*
+
+%0dataAccess.DataAccess¶
+³
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaÝ Ý(*"
+	dbManagerdataAccess.DataAccess"__id*
+
+%0dataAccess.DataAccess€ý
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaÞ Þ(B
+%2java.util.Vector"bdataAccess.DataAccess#getEventsCategoryMonth(Ljava/util/Date;Ldomain/Categoria;)Ljava/util/Vector;*$
+"
+	dbManagerdataAccess.DataAccess*
+
+datejava.util.Date*
+
+catdomain.Categoria2:getEventsCategoryMonth(Ljava/util/Date;Ldomain/Categoria;)¨
+¥
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaÞ Þ(C
+datesjava.util.Vector"__id*
+
+%2java.util.VectorÈÅ
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaß ß(
+
+%3void"dataAccess.DataAccess#close()V*$
+"
+	dbManagerdataAccess.DataAccess2close()"‡
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaà à(
+
+datesjava.util.Vector:
+datejava.util.Date:
+catdomain.CategoriaB(&
+$businessLogic.BLFacadeImplementation

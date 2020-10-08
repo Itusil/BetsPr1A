@@ -1,0 +1,43 @@
+
+BbusinessLogic.BLFacadeImplementation#getMensajes()Ljava/util/List;h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaã ã(!"1*
+
+1h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaå å()°û
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaå å('
+%0dataAccess.DataAccess"dataAccess.DataAccess≥
+∞
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaå å()
+%1"dataAccess.DataAccess#<init>()V*
+
+%0dataAccess.DataAccess∂
+≥
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaå å(*"
+	dbManagerdataAccess.DataAccess"__id*
+
+%0dataAccess.DataAccessÌÍ
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaç ç(1
+%2java.util.List"3dataAccess.DataAccess#getMensajes()Ljava/util/List;*$
+"
+	dbManagerdataAccess.DataAccess2getMensajes()ß
+§
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaç ç(2
+mensajesjava.util.List"__id*
+
+%2java.util.List»≈
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaé é(
+
+%3void"dataAccess.DataAccess#close()V*$
+"
+	dbManagerdataAccess.DataAccess2close()"à
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaè è(
+
+mensajesjava.util.ListB(&
+$businessLogic.BLFacadeImplementation

@@ -1,0 +1,44 @@
+
+KbusinessLogic.BLFacadeImplementation#obtenerPronostico(I)Ljava/util/Vector;h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaÉ" É(3"1*ˆ
+1h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaÊ Ê()¡ž
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaÊ Ê('
+%0dataAccess.DataAccess"dataAccess.DataAccess³
+°
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaÊ Ê()
+%1"dataAccess.DataAccess#<init>()V*
+
+%0dataAccess.DataAccess¶
+³
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaÊ Ê(*"
+	dBManagerdataAccess.DataAccess"__id*
+
+%0dataAccess.DataAccess‡„
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaË# Ë(A
+%2java.util.Vector"<dataAccess.DataAccess#obtenerPronostico(I)Ljava/util/Vector;*$
+"
+	dBManagerdataAccess.DataAccess*
+""2obtenerPronostico(I)§
+¤
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaË Ë(B
+pronjava.util.Vector"__id*
+
+%2java.util.VectorÈÅ
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaÌ Ì(
+
+%3void"dataAccess.DataAccess#close()V*$
+"
+	dBManagerdataAccess.DataAccess2close()"†
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaÍ Í(
+
+pronjava.util.Vector:
+""B(&
+$businessLogic.BLFacadeImplementation

@@ -1,0 +1,16 @@
+
+-domain.Event#getQuestions()Ljava/util/Vector;N
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.java   (%"1*‘
+1N
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.java!	 !(í
+è
+N
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.java!	 !(
+%0java.util.Vector"__id**
+domain.Event"
+	questions"j
+N
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.java! !(
+
+%0java.util.VectorB
+domain.Event

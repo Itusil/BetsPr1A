@@ -1,0 +1,44 @@
+
+PbusinessLogic.BLFacadeImplementation#getPronosticoByNumber(I)Ldomain/Pronostico;h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaè è(("1*ì
+1h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaê ê()°û
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaê ê('
+%0dataAccess.DataAccess"dataAccess.DataAccess≥
+∞
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaê ê()
+%1"dataAccess.DataAccess#<init>()V*
+
+%0dataAccess.DataAccess∂
+≥
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaê ê(*"
+	dBManagerdataAccess.DataAccess"__id*
+
+%0dataAccess.DataAccessëé
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaë ë(D
+%2domain.Pronostico"AdataAccess.DataAccess#getPronosticoByNumber(I)Ldomain/Pronostico;*$
+"
+	dBManagerdataAccess.DataAccess*
+""2getPronosticoByNumber(I)®
+•
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaë ë(E
+prodomain.Pronostico"__id*
+
+%2domain.Pronostico»≈
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaí í(
+
+%3void"dataAccess.DataAccess#close()V*$
+"
+	dBManagerdataAccess.DataAccess2close()"Ü
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaì ì(
+
+prodomain.Pronostico:
+""B(&
+$businessLogic.BLFacadeImplementation

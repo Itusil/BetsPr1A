@@ -1,0 +1,35 @@
+
+:dataAccess.DataAccess#eventoTieneApuestas(Ldomain/Event;)ZY
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.java÷ ÷(#"3*Ã
+2Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaþ
+ þ("c
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaþ þ(
+""*À
+3Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaø ø(ÑÎ
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaø  ø(3
+%0java.lang.Integer"0domain.Event#getEventNumber()Ljava/lang/Integer;*
+
+evdomain.Event2getEventNumber()~
+|
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaø ø(5
+edomain.Event"__id*
+""ƒ
+€
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaü ü(-
+apujava.util.List"__id*
+""*
+2
+1*Ã
+1Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.java€	 €("c
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.java€ €(
+"":
+evdomain.EventB
+dataAccess.DataAccess

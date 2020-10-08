@@ -1,0 +1,7 @@
+organization=lab01is2-iturria-silveti-mikel
+projectKey=MISBets
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.12604
+dashboardUrl=https://sonarcloud.io/dashboard?id=MISBets
+ceTaskId=AXTE4yG-_l3E7SC2urMp
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AXTE4yG-_l3E7SC2urMp

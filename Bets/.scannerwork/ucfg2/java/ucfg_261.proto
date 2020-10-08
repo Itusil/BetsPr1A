@@ -1,0 +1,63 @@
+
+ObusinessLogic.BLFacadeImplementation#getEvent(Ljava/lang/String;)Ldomain/Event;h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaå å("startingBlock*Ò
+startingBlockh
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaå å("²
+¯
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaä ä(
+
+%4"
+__annotate*
+java.lang.Override*
+
+usujava.lang.Stringœ
+™
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaå å(!
+usujava.lang.String"__annotation*
+
+%4*
+1*—
+1h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaæ æ()¡ž
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaæ æ('
+%0dataAccess.DataAccess"dataAccess.DataAccess³
+°
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaæ æ()
+%1"dataAccess.DataAccess#<init>()V*
+
+%0dataAccess.DataAccess¶
+³
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaæ æ(*"
+	dBManagerdataAccess.DataAccess"__id*
+
+%0dataAccess.DataAccess¢Ÿ
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaç ç(&
+%2domain.Event"@dataAccess.DataAccess#getEvent(Ljava/lang/String;)Ldomain/Event;*$
+"
+	dBManagerdataAccess.DataAccess*
+
+usujava.lang.String2getEvent(Ljava/lang/String;)Ÿ
+œ
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaç ç('
+cartdomain.Event"__id*
+
+%2domain.EventÈÅ
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaè è(
+
+%3void"dataAccess.DataAccess#close()V*$
+"
+	dBManagerdataAccess.DataAccess2close()"‚
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaé é(
+
+cartdomain.Event:
+usujava.lang.StringB(&
+$businessLogic.BLFacadeImplementation

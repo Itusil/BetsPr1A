@@ -1,0 +1,63 @@
+
+UbusinessLogic.BLFacadeImplementation#getQuestion(Ljava/lang/String;)Ldomain/Question;h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaó ó("startingBlock*Ò
+startingBlockh
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaó ó((²
+¯
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaò ò(
+
+%4"
+__annotate*
+java.lang.Override*
+
+usujava.lang.Stringœ
+™
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaó$ ó('
+usujava.lang.String"__annotation*
+
+%4*
+1*¬
+1h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaô ô()¡ž
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaô ô('
+%0dataAccess.DataAccess"dataAccess.DataAccess³
+°
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaô ô()
+%1"dataAccess.DataAccess#<init>()V*
+
+%0dataAccess.DataAccess¶
+³
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaô ô(*"
+	dBManagerdataAccess.DataAccess"__id*
+
+%0dataAccess.DataAccess®«
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaõ õ(,
+%2domain.Question"FdataAccess.DataAccess#getQuestion(Ljava/lang/String;)Ldomain/Question;*$
+"
+	dBManagerdataAccess.DataAccess*
+
+usujava.lang.String2getQuestion(Ljava/lang/String;)¥
+¢
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaõ õ(-
+cartdomain.Question"__id*
+
+%2domain.QuestionÈÅ
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaö ö(
+
+%3void"dataAccess.DataAccess#close()V*$
+"
+	dBManagerdataAccess.DataAccess2close()"…
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.java÷ ÷(
+
+cartdomain.Question:
+usujava.lang.StringB(&
+$businessLogic.BLFacadeImplementation

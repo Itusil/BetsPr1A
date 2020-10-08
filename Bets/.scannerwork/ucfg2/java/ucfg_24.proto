@@ -1,0 +1,55 @@
+
+4domain.Event#DoesQuestionExists(Ljava/lang/String;)ZN
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.javav v(""5*í
+2N
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.javaw w(v
+t
+N
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.javaw w(
+qdomain.Question"__id*
+""—
+”
+N
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.javaw w(
+qdomain.Question"
+__arrayGet*
+
+%0java.util.Vector*
+""*
+4
+1*­
+3N
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.javay y("X
+N
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.javay y(
+""*Œ
+4N
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.javax x(ÃÀ
+N
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.javax x(
+%1java.lang.String"/domain.Question#getQuestion()Ljava/lang/String;*
+
+qdomain.Question2getQuestion()èå
+N
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.javax x(*	
+%2int"/java.lang.String#compareTo(Ljava/lang/String;)I*
+
+%1java.lang.String*
+
+questionjava.lang.String2compareTo(Ljava/lang/String;)*
+2
+3*—
+5N
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.javaw w(¼¹
+N
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.javaw w(%
+%0java.util.Vector"-domain.Event#getQuestions()Ljava/util/Vector;*
+domain.Event2getQuestions()*
+2*­
+1N
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.java{	 {("X
+N
+DC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Event.java{ {(
+"":
+questionjava.lang.StringB
+domain.Event

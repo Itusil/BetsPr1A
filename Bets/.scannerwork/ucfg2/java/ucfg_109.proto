@@ -1,0 +1,44 @@
+
+5dataAccess.DataAccess#eliminarEvento(Ldomain/Event;)IY
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaç ç("1*¡
+
+1Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaè è(ÑÎ
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaé  é(3
+%0java.lang.Integer"0domain.Event#getEventNumber()Ljava/lang/Integer;*
+
+evdomain.Event2getEventNumber()~
+|
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaé é(5
+edomain.Event"__id*
+""¾»
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaê* ê(4
+%1domain.Categoria"'domain.Event#getCat()Ldomain/Categoria;*
+
+edomain.Event2getCat()ÕÒ
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaê* ê(C
+%2java.lang.Integer"2domain.Categoria#getCatNumber()Ljava/lang/Integer;*
+
+%1domain.Categoria2getCatNumber()…
+‚
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaê ê(E
+ca1domain.Categoria"__id*
+""æã
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaë ë(
+
+%3void"-domain.Categoria#removeEvent(Ldomain/Event;)V*
+
+ca1domain.Categoria*
+
+edomain.Event2removeEvent(Ldomain/Event;)"c
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaî î(
+"":
+evdomain.EventB
+dataAccess.DataAccess

@@ -1,0 +1,25 @@
+
+DdataAccess.DataAccess#getCartera(Ldomain/Usuario;)Ljava/lang/Double;Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaÐ Ð("1*Õ
+1Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaÑ Ñ(ØÕ
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaÑ& Ñ(<
+%0java.lang.String"3domain.Usuario#getNombreUsuario()Ljava/lang/String;*
+
+usudomain.Usuario2getNombreUsuario()
+
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaÑ Ñ(>
+ubdomain.Usuario"__id*
+""°­
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaÒ Ò(
+%1double"domain.Usuario#getCartera()D*
+
+ubdomain.Usuario2getCartera()"c
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaÓ Ó(
+"":
+usudomain.UsuarioB
+dataAccess.DataAccess

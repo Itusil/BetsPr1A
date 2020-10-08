@@ -1,0 +1,114 @@
+
+&gui.AnadirFondosBuenoGUI#esCorrecto()Z\
+PC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/gui/AnadirFondosBuenoGUI.javaä ä("9*…
+2\
+PC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/gui/AnadirFondosBuenoGUI.javaï
+ ï("f
+\
+PC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/gui/AnadirFondosBuenoGUI.javaï ï(
+""*ª
+3\
+PC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/gui/AnadirFondosBuenoGUI.javaî î(π
+∂
+\
+PC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/gui/AnadirFondosBuenoGUI.javaî î(
+%9javax.swing.JTextField"__id*2*0
+gui.AnadirFondosBuenoGUI"
+textFieldTarjeta‚ﬂ
+\
+PC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/gui/AnadirFondosBuenoGUI.javaî î( 
+%10java.lang.String";javax.swing.text.JTextComponent#getText()Ljava/lang/String;*
+
+%9javax.swing.JTextField2	getText()Æ´
+\
+PC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/gui/AnadirFondosBuenoGUI.javaî î()
+
+%11int"java.lang.String#length()I*
+
+%10java.lang.String2length()*
+2
+1*…
+4\
+PC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/gui/AnadirFondosBuenoGUI.javaí
+ í("f
+\
+PC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/gui/AnadirFondosBuenoGUI.javaí í(
+""*µ
+5\
+PC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/gui/AnadirFondosBuenoGUI.javaë ë(∂
+≥
+\
+PC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/gui/AnadirFondosBuenoGUI.javaë ë(
+%6javax.swing.JTextField"__id*/*-
+gui.AnadirFondosBuenoGUI"
+textField_CVV·ﬁ
+\
+PC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/gui/AnadirFondosBuenoGUI.javaë ë(
+%7java.lang.String";javax.swing.text.JTextComponent#getText()Ljava/lang/String;*
+
+%6javax.swing.JTextField2	getText()¨©
+\
+PC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/gui/AnadirFondosBuenoGUI.javaë ë(&	
+%8int"java.lang.String#length()I*
+
+%7java.lang.String2length()*
+3
+4*…
+6\
+PC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/gui/AnadirFondosBuenoGUI.javaè
+ è("f
+\
+PC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/gui/AnadirFondosBuenoGUI.javaè è(
+""*¥
+7\
+PC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/gui/AnadirFondosBuenoGUI.javaé é(µ
+≤
+\
+PC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/gui/AnadirFondosBuenoGUI.javaé é(
+%3javax.swing.JTextField"__id*.*,
+gui.AnadirFondosBuenoGUI"
+textFieldMes·ﬁ
+\
+PC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/gui/AnadirFondosBuenoGUI.javaé é(
+%4java.lang.String";javax.swing.text.JTextComponent#getText()Ljava/lang/String;*
+
+%3javax.swing.JTextField2	getText()¨©
+\
+PC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/gui/AnadirFondosBuenoGUI.javaé é(%	
+%5int"java.lang.String#length()I*
+
+%4java.lang.String2length()*
+5
+6*…
+8\
+PC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/gui/AnadirFondosBuenoGUI.javaå
+ å("f
+\
+PC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/gui/AnadirFondosBuenoGUI.javaå å(
+""*µ
+9\
+PC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/gui/AnadirFondosBuenoGUI.javaã ã(∂
+≥
+\
+PC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/gui/AnadirFondosBuenoGUI.javaã ã(
+%0javax.swing.JTextField"__id*/*-
+gui.AnadirFondosBuenoGUI"
+textField_Ano·ﬁ
+\
+PC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/gui/AnadirFondosBuenoGUI.javaã ã(
+%1java.lang.String";javax.swing.text.JTextComponent#getText()Ljava/lang/String;*
+
+%0javax.swing.JTextField2	getText()¨©
+\
+PC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/gui/AnadirFondosBuenoGUI.javaã ã(&	
+%2int"java.lang.String#length()I*
+
+%1java.lang.String2length()*
+7
+8*…
+1\
+PC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/gui/AnadirFondosBuenoGUI.javaó	 ó("f
+\
+PC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/gui/AnadirFondosBuenoGUI.javaó ó(
+""B
+gui.AnadirFondosBuenoGUI

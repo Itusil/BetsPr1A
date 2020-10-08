@@ -1,0 +1,37 @@
+
+.domain.Pronostico#imprimir()Ljava/lang/String;S
+IC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Pronostico.java8 8("1*∏
+1S
+IC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Pronostico.java9 9(ù
+ö
+S
+IC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Pronostico.java9 9(
+%0java.lang.String"__id*%*#
+domain.Pronostico"
+
+pronosticoú
+ô
+S
+IC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Pronostico.java9 9(
+%1java.lang.String"__concat*
+
+%0java.lang.String*
+: ú
+ô
+S
+IC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Pronostico.java9 9(*
+%2java.lang.String"__concat*
+
+%1java.lang.String*
+""è
+å
+S
+IC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Pronostico.java9 9(+
+sjava.lang.String"__id*
+
+%2java.lang.String"n
+S
+IC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Pronostico.java: :(
+
+sjava.lang.StringB
+domain.Pronostico

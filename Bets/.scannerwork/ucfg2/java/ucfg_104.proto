@@ -1,0 +1,95 @@
+
+:dataAccess.DataAccess#eliminarPregunta(Ldomain/Question;)IY
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaÇ Ç("7*ï
+2Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaè è(Ñ
+Å
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaè è(
+pdomain.Pronostico"__id*
+""•
+¢
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaè è(
+pdomain.Pronostico"
+__arrayGet*
+
+projava.util.Vector*
+""*
+2
+1*É	
+5Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaã ã(‹Ÿ
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaå) å(>
+%1java.lang.Integer"6domain.Question#getQuestionNumber()Ljava/lang/Integer;*
+
+qdomain.Question2getQuestionNumber()Ö
+Ç
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaå å(@
+queedomain.Question"__id*
+""√¿
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaç" ç(1
+%2domain.Event"(domain.Question#getEvent()Ldomain/Event;*
+
+queedomain.Question2
+getEvent()
+}
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaç ç(3
+evdomain.Event"__id*
+""’“
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaé é(.
+%3java.util.Vector"1domain.Question#getPronostico()Ljava/util/Vector;*
+
+queedomain.Question2getPronostico()ó
+î
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaé é(/
+projava.util.Vector"__id*
+
+%3java.util.Vector*
+2*√
+6Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaâ
+ â("c
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaâ â(
+""*“
+7Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaÉ É(‹Ÿ
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaÉ( É(=
+%0java.lang.Integer"6domain.Question#getQuestionNumber()Ljava/lang/Integer;*
+
+qdomain.Question2getQuestionNumber()Ñ
+Å
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaÉ É(?
+quedomain.Question"__id*
+""É
+Ä
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaá á(-
+apujava.util.List"__id*
+""*
+5
+6*µ
+1Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaì ì(ÔÏ
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaì ì(
+
+%4void"/domain.Event#removeQuestion(Ldomain/Question;)V*
+
+evdomain.Event*
+
+queedomain.Question2!removeQuestion(Ldomain/Question;)"c
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javañ ñ(
+"":
+qdomain.QuestionB
+dataAccess.DataAccess

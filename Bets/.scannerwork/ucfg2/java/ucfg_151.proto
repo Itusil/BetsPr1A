@@ -1,0 +1,60 @@
+
+,domain.Question#toString()Ljava/lang/String;S
+GC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Question.javaö ö("1*Ê
+
+1S
+GC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Question.javaõ	 õ(†
+ù
+S
+GC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Question.javaõ	 õ(
+%0java.lang.Integer"__id*'*%
+domain.Question"
+questionNumberú
+ô
+S
+GC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Question.javaõ	 õ(
+%1java.lang.String"__concat*
+
+%0java.lang.Integer*
+;ô
+ñ
+S
+GC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Question.javaõ  õ((
+%2java.lang.String"__id*!*
+domain.Question"
+
+questionÆ
+´
+S
+GC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Question.javaõ	 õ((
+%3java.lang.String"__concat*
+
+%1java.lang.String*
+
+%2java.lang.Stringõ
+ò
+S
+GC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Question.javaõ	 õ(.
+%4java.lang.String"__concat*
+
+%3java.lang.String*
+;º
+π
+S
+GC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Question.javaõ1 õ(K
+%5java.lang.String"-java.lang.Float#toString(F)Ljava/lang/String;*"
+java.lang.Float*
+""Æ
+´
+S
+GC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Question.javaõ	 õ(K
+%6java.lang.String"__concat*
+
+%4java.lang.String*
+
+%5java.lang.String"o
+S
+GC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/Question.javaõ õ(L
+
+%6java.lang.StringB
+domain.Question

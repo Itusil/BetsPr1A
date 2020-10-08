@@ -1,0 +1,111 @@
+
+DbusinessLogic.BLFacadeImplementation#eliminarEvento(Ldomain/Event;)Ih
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.java§ §("startingBlock*€
+2h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.java² ²(‹ˆ
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.java² ²($	
+%5int"5dataAccess.DataAccess#eliminarEvento(Ldomain/Event;)I*$
+"
+	dbManagerdataAccess.DataAccess*
+
+evdomain.Event2eliminarEvento(Ldomain/Event;)*
+1*¼
+3h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.java¯ ¯(‘
+Ž
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.java¯ ¯(
+qdomain.Question"__id*
+""°
+­
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.java¯ ¯(
+qdomain.Question"
+__arrayGet*
+
+njava.util.Vector*
+""*
+2
+4*È
+startingBlockh
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.java§ §($­
+ª
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.java¦ ¦(
+
+%7"
+__annotate*
+java.lang.Override*
+
+evdomain.Event—
+”
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.java§! §(#
+evdomain.Event"__annotation*
+
+%7*
+8*Œ
+4h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.java° °(—”
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.java° °(!	
+%4int":dataAccess.DataAccess#eliminarPregunta(Ldomain/Question;)I*$
+"
+	dbManagerdataAccess.DataAccess*
+
+qdomain.Question2#eliminarPregunta(Ldomain/Question;)*
+3*ö
+6h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.java® ®(Ú×
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.java® ®()
+%3java.util.Vector"-domain.Event#getQuestions()Ljava/util/Vector;*
+
+evdomain.Event2getQuestions()¤
+¡
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.java® ®(*
+njava.util.Vector"__id*
+
+%3java.util.Vector*
+3*¤
+8h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.java¨ ¨()¡ž
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.java¨ ¨('
+%0dataAccess.DataAccess"dataAccess.DataAccess³
+°
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.java¨ ¨()
+%1"dataAccess.DataAccess#<init>()V*
+
+%0dataAccess.DataAccess¶
+³
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.java¨ ¨(*"
+	dbManagerdataAccess.DataAccess"__id*
+
+%0dataAccess.DataAccess™–
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.java© ©(/
+%2boolean":dataAccess.DataAccess#eventoTieneApuestas(Ldomain/Event;)Z*$
+"
+	dbManagerdataAccess.DataAccess*
+
+evdomain.Event2#eventoTieneApuestas(Ldomain/Event;)*
+6
+1*¬
+1h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaµ µ(ÈÅ
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaµ µ(
+
+%6void"dataAccess.DataAccess#close()V*$
+"
+	dbManagerdataAccess.DataAccess2close()"r
+h
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.java¶ ¶(
+"":
+evdomain.EventB(&
+$businessLogic.BLFacadeImplementation

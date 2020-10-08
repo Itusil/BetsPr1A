@@ -1,0 +1,63 @@
+
+>dataAccess.DataAccess#eliminarPronostico(Ldomain/Pronostico;)IY
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaÏ Ï("3*Ã
+2Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaÖ
+ Ö("c
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaÖ Ö(
+""*¼
+3Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaÐ Ð(ÄÁ
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaÐ, Ð(C	
+%0int"(domain.Pronostico#getPronosticoNumber()I*
+
+pdomain.Pronostico2getPronosticoNumber()†
+ƒ
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaÐ Ð(E
+prodomain.Pronostico"__id*
+""ƒ
+€
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaÔ Ô(-
+apujava.util.List"__id*
+""*
+2
+1*ú
+1Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaØ Ø(æã
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaÙ) Ù(D
+%1domain.Question":domain.Pronostico#getPreguntaPronostico()Ldomain/Question;*
+
+prodomain.Pronostico2getPreguntaPronostico()…
+‚
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaÙ Ù(F
+queedomain.Question"__id*
+""òï
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaÚ Ú(
+
+%2void"/domain.Question#removePro(Ldomain/Pronostico;)V*
+
+queedomain.Question*
+
+prodomain.Pronostico2removePro(Ldomain/Pronostico;)ÄÁ
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaÛ. Û(E	
+%3int"(domain.Pronostico#getPronosticoNumber()I*
+
+pdomain.Pronostico2getPronosticoNumber()‡
+„
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaÛ Û(G
+proodomain.Pronostico"__id*
+"""c
+Y
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/dataAccess/DataAccess.javaÞ Þ(
+"":
+pdomain.PronosticoB
+dataAccess.DataAccess

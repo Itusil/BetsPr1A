@@ -1,0 +1,73 @@
+
+WbusinessLogic.BLFacadeImplementation#getEventsMonth(Ljava/util/Date;)Ljava/util/Vector;f
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaW  W(."startingBlock*û
+startingBlockf
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaW. W(9¯
+¬
+f
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaV V(
+
+%4"
+__annotate*
+java.lang.Override*
+
+datejava.util.Date¦
+£
+f
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaW W(
+%5"
+__annotate*
+	WebMethod*
+
+datejava.util.Date¡
+ž
+f
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaW4 W(8
+datejava.util.Date"__annotation*
+
+%4*
+
+%5*
+1*¤
+1f
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaX X('Ÿœ
+f
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaX X(%
+%0dataAccess.DataAccess"dataAccess.DataAccess±
+®
+f
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaX X('
+%1"dataAccess.DataAccess#<init>()V*
+
+%0dataAccess.DataAccess´
+±
+f
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaX X(("
+	dbManagerdataAccess.DataAccess"__id*
+
+%0dataAccess.DataAccess¯¬
+f
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaY Y(4
+%2java.util.Vector"HdataAccess.DataAccess#getEventsMonth(Ljava/util/Date;)Ljava/util/Vector;*$
+"
+	dbManagerdataAccess.DataAccess*
+
+datejava.util.Date2 getEventsMonth(Ljava/util/Date;)¦
+£
+f
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaY Y(5
+datesjava.util.Vector"__id*
+
+%2java.util.VectorÆÃ
+f
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.javaZ Z(
+
+%3void"dataAccess.DataAccess#close()V*$
+"
+	dbManagerdataAccess.DataAccess2close()"…
+f
+\C:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/businessLogic/BLFacadeImplementation.java[ [(
+
+datesjava.util.Vector:
+datejava.util.DateB(&
+$businessLogic.BLFacadeImplementation

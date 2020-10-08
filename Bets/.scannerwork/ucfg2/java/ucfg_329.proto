@@ -1,0 +1,18 @@
+
+Fdomain.IntegerAdapter#unmarshal(Ljava/lang/String;)Ljava/lang/Integer;W
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/IntegerAdapter.java ("1*è
+1W
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/IntegerAdapter.java (»
+≈
+W
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/IntegerAdapter.java ("	
+%0int"/java.lang.Integer#parseInt(Ljava/lang/String;)I*"
+java.lang.Integer*
+
+sjava.lang.String"f
+W
+MC:/Users/Mikel Iturria/eclipse/TERCERO/WS/Bets/src/domain/IntegerAdapter.java (#
+	
+%0int:
+sjava.lang.StringB
+domain.IntegerAdapter
