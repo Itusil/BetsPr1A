@@ -15,6 +15,10 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import org.mockito.ArgumentCaptor;
+import org.mockito.Mockito;
+import org.mockito.MockitoAnnotations;
+
 import businessLogic.BLFacade;
 import businessLogic.BLFacadeImplementation;
 import dataAccess.DataAccess;
@@ -23,9 +27,6 @@ import domain.Question;
 import exceptions.EventFinished;
 import exceptions.QuestionAlreadyExist;
 
-import org.mockito.ArgumentCaptor;
-import org.mockito.Mockito;
-import org.mockito.MockitoAnnotations;
 
 class FacadeMockTest {
 	private String queryText = "A question";

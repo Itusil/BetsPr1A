@@ -44,28 +44,53 @@ public class DataAccess {
 		new DataAccess(false);
 	}
 
-	public void open (boolean initializeMode) {
-		if (initializeMode) {
-			boolean del1= new File(fileName).delete();
-			boolean del2 =new File(fileName + '$').delete();
-			if (!del1 && !del2){
-				System.out.println("Error");
-			}else {
-				System.out.println("Correctamente borrado");
-			}
-			emf = Persistence.createEntityManagerFactory("objectdb:" + fileName);
-			db = emf.createEntityManager();
-			System.out.println("Base de datos Abierta.");
-			initializeDB();
-		} else {
-			emf = Persistence.createEntityManagerFactory("objectdb:" + fileName);
-			db = emf.createEntityManager();
-			System.out.println("Base de datos Abierta.");
-		}
-	}
-	
+	//	public void open (boolean initializeMode) {
+	//		if (initializeMode) {
+	//			boolean del1= new File(fileName).delete();
+	//			boolean del2 =new File(fileName + '$').delete();
+	//			if (!del1 && !del2){
+	//				System.out.println("Error");
+	//			}else {
+	//				System.out.println("Correctamente borrado");
+	//			}
+	//			emf = Persistence.createEntityManagerFactory("objectdb:" + fileName);
+	//			db = emf.createEntityManager();
+	//			System.out.println("Base de datos Abierta.");
+	//			initializeDB();
+	//		} else {
+	//			emf = Persistence.createEntityManagerFactory("objectdb:" + fileName);
+	//			db = emf.createEntityManager();
+	//			System.out.println("Base de datos Abierta.");
+	//		}
+	//	}
 
-	
+	public void open(boolean initializeMode){
+
+		System.out.println("Opening DataAccess instance => isDatabaseLocal: "+c.isDatabaseLocal()+" getDatabBaseOpenMode: "+c.getDataBaseOpenMode());
+
+		String fileName=c.getDbFilename();
+		if (initializeMode) {
+			fileName=fileName+";drop";
+			System.out.println("Deleting the DataBase");
+		}
+
+		//if (c.isDatabaseLocal()) {
+			emf = Persistence.createEntityManagerFactory("objectdb:"+fileName);
+			db = emf.createEntityManager();
+//		} else {
+//			Map<String, String> properties = new HashMap<String, String>();
+//			properties.put("javax.persistence.jdbc.user", c.getUser());
+//			properties.put("javax.persistence.jdbc.password", c.getPassword());
+//
+//			emf = Persistence.createEntityManagerFactory("objectdb://"+c.getDatabaseNode()+":"+c.getDatabasePort()+"/"+fileName, properties);
+//
+//			db = emf.createEntityManager();
+//		}
+
+	}
+
+
+
 
 	/**
 	 * This is the data access method that initializes the database with some
@@ -140,68 +165,68 @@ public class DataAccess {
 			ca2.addEvent(ev24);
 			ca2.addEvent(ev25);
 			ca2.addEvent(ev26);
-			
+
 			Categoria ca3= new Categoria ("Tenis");
 			Event ev27 = new Event(27, "Roger Federer-Rafael Nadal", UtilDate.newDate(year, month, 5),ca3);
 			Event ev28 = new Event(28, "Roger Federer-Rafael Nadal", UtilDate.newDate(year, month, 29),ca3);
 			Event ev29 = new Event(29, "Novak Djokovic-Maria Sharapova", UtilDate.newDate(year, month, 9),ca3);
 			Event ev30 = new Event(30, "Novak Djokovic-Rafael Nadal", UtilDate.newDate(year, month, 14),ca3);
-	
+
 			ca3.addEvent(ev27);
 			ca3.addEvent(ev28);
 			ca3.addEvent(ev29);
 			ca3.addEvent(ev30);
-			
+
 			Categoria ca4= new Categoria ("Beisbol");
 			Event ev31 = new Event(31, "New York Yankees-New York Mets", UtilDate.newDate(year, month, 4),ca4);
 			Event ev32 = new Event(32, "San Francisco Giants-New York Yankees", UtilDate.newDate(year, month, 28),ca4);
 			Event ev33 = new Event(33, "L.A. Dodgers-Houston Astros", UtilDate.newDate(year, month, 9),ca4);
-			
+
 			ca4.addEvent(ev31);
 			ca4.addEvent(ev32);
 			ca4.addEvent(ev33);
-			
+
 			Categoria ca5= new Categoria ("Boxeo");
 			Event ev34 = new Event(34, "Ryan García-Tyson Fury", UtilDate.newDate(year, month, 5), ca5);
 			Event ev35 = new Event(35, "Manny Pacquiao-Floyd Mayweather", UtilDate.newDate(year, month, 28),ca5);
 			Event ev36 = new Event(36, "Ryan García-Mike Tyson", UtilDate.newDate(year, month, 24), ca5);
 			Event ev37 = new Event(37, "Floyd Mayweather-Mike Tyson", UtilDate.newDate(year, month, 9),ca5);
-			
+
 			ca5.addEvent(ev34);
 			ca5.addEvent(ev35);
 			ca5.addEvent(ev36);
 			ca5.addEvent(ev37);
-			
+
 			Categoria ca6= new Categoria ("FutbolAmericano");
 			Event ev38 = new Event(38, "Patriots-DallasCowboys", UtilDate.newDate(year, month, 15),ca6);
 			Event ev39 = new Event(39, "New York Giants-Miami Dolphins", UtilDate.newDate(year, month, 15),ca6);
 			Event ev40 = new Event(40, "Philadelphia Eagles-Minnesota Vikings", UtilDate.newDate(year, month, 16),ca6);
 			Event ev41 = new Event(41, "Arizona Cardinals-Buffalo Bills", UtilDate.newDate(year, month, 16),ca6);
-			
+
 			ca6.addEvent(ev38);
 			ca6.addEvent(ev39);
 			ca6.addEvent(ev40);
 			ca6.addEvent(ev41);
-			
+
 			Categoria ca7= new Categoria ("Ufc");
 			Event ev42 = new Event(42, "Conor McGregor-Khabib Nurmagomedov", UtilDate.newDate(year, month, 15),ca7);
 			Event ev43 = new Event(43, "Israel Adesanya-Henry Cejudo", UtilDate.newDate(year, month, 15),ca7);
 			Event ev44 = new Event(44, "Kamaru Usman-Stipe Miocic", UtilDate.newDate(year, month, 15),ca7);
-			
+
 			Categoria ca8= new Categoria ("Formula1");
 			Event ev45 = new Event(45, "Circuito de Montmeló", UtilDate.newDate(year, month, 7), ca8);
-			
+
 			Categoria ca9= new Categoria ("MotoGP");
 			Event ev46 = new Event(46, "QNB Gran Prix of Qatar", UtilDate.newDate(year, month, 7),ca9);
-			
+
 			ca7.addEvent(ev42);
 			ca7.addEvent(ev43);
 			ca7.addEvent(ev44);
-			
+
 			ca8.addEvent(ev45);
-			
+
 			ca9.addEvent(ev46);
-			
+
 			db.persist(ca1);
 			db.persist(ca2);
 			db.persist(ca3);
@@ -211,8 +236,8 @@ public class DataAccess {
 			db.persist(ca7);
 			db.persist(ca8);
 			db.persist(ca9);
-		
-			
+
+
 			Question q1;
 			Question q2;
 			Question q3;
@@ -343,8 +368,8 @@ public class DataAccess {
 			db.persist(ev44);
 			db.persist(ev45);
 			db.persist(ev46);
-			
-			
+
+
 
 			db.persist(m1);
 			db.persist(m2);
@@ -357,7 +382,7 @@ public class DataAccess {
 		}
 	}
 
-	
+
 	/**
 	 * This method creates a question for an event, with a question text and the
 	 * minimum bet
@@ -388,7 +413,7 @@ public class DataAccess {
 
 	}
 
-	
+
 	/**
 	 * Devuelve las fechas en los que hay eventos de una categoria en especial
 	 * @param date
@@ -420,9 +445,9 @@ public class DataAccess {
 		}
 
 	}
-	
-	
-    /**
+
+
+	/**
 	 * Dados los datos de un pronostico, lo crea y lo guarda en la base de datos
 	 * @param pronostico
 	 * @param cuota
@@ -441,7 +466,7 @@ public class DataAccess {
 		db.getTransaction().commit();
 	}
 
-	
+
 	/**
 	 * This method retrieves from the database the events of a given date
 	 * 
@@ -460,7 +485,7 @@ public class DataAccess {
 		return res;
 	}
 
-	
+
 	/**
 	 * This method retrieves from the database the dates a month for which there
 	 * are events
@@ -488,11 +513,11 @@ public class DataAccess {
 		return res;
 	}
 
-	
+
 	/**
-     * Dado un nombre de usuario lo convierte en administrador
-     * @param nombreUsuario
-     */
+	 * Dado un nombre de usuario lo convierte en administrador
+	 * @param nombreUsuario
+	 */
 	public void hacerAdmin(String nombreUsuario) {
 		Usuario u = db.find(Usuario.class, nombreUsuario);
 		db.getTransaction().begin();
@@ -501,7 +526,7 @@ public class DataAccess {
 		db.getTransaction().commit();
 	}
 
-	
+
 	/**
 	 * Obtiene en Usuario a traves del nombre de usuario
 	 * @param nombreUsuario
@@ -511,8 +536,8 @@ public class DataAccess {
 		Usuario u = db.find(Usuario.class, nombreUsuario);
 		return u;
 	}
-	
-	
+
+
 	/**
 	 * Cierra el entity manager
 	 */
@@ -521,8 +546,8 @@ public class DataAccess {
 		System.out.println("DataBase closed");
 	}
 
-	
-    /**
+
+	/**
 	 * Dado un nombre de usuario mira si existe el usuario en la BD
 	 * @param nombreUsuario
 	 * @return TRUE si existe, FALSE si no existe
@@ -539,16 +564,16 @@ public class DataAccess {
 		}
 	}
 
-	
-    /**
-     * Dado los datos de un nuevo usuario lo crea y lo almacena en la BD
-     * @param nombre
-     * @param apellido
-     * @param fechaNacimiento
-     * @param contraseña
-     * @param dNI
-     * @param nombreUsuario
-     */
+
+	/**
+	 * Dado los datos de un nuevo usuario lo crea y lo almacena en la BD
+	 * @param nombre
+	 * @param apellido
+	 * @param fechaNacimiento
+	 * @param contraseña
+	 * @param dNI
+	 * @param nombreUsuario
+	 */
 	public void ingresarUsuario(String nombre, String apellido, Date fechaNacimiento, String contrasena, String dNI,
 			String nombreUsuario) {
 		Usuario u = new Usuario(nombre, apellido, fechaNacimiento, contrasena, dNI, nombreUsuario);
@@ -557,7 +582,7 @@ public class DataAccess {
 		db.getTransaction().commit();
 	}
 
-	
+
 	/**
 	 * Dado un usuario y una cantidad de dinero, le añade ese dinero al usario
 	 * NOTA: Puede usarse para restar dinero si la cantidad de dinero es negativa
@@ -573,7 +598,7 @@ public class DataAccess {
 		db.getTransaction().commit();
 	}
 
-	
+
 	/**
 	 * Dado un numero de pregunta, obtiene sus pronosticos
 	 * @param j
@@ -593,7 +618,7 @@ public class DataAccess {
 		return pron;
 	}
 
-	
+
 	/**
 	 * Dado un usuario obtiene el dinero que tiene en la cartera
 	 * @param usu
@@ -605,7 +630,7 @@ public class DataAccess {
 		return cart;
 	}
 
-	
+
 	/**
 	 * Dado un string con la descripcion de un evento, lo busca y lo devuelve
 	 * @param usu descripcion del evento
@@ -619,7 +644,7 @@ public class DataAccess {
 		return ev;
 	}
 
-	
+
 	/**
 	 * Dado un string con la descripcion de una pregunta, la busca y la devuelve
 	 * @param usu descripcion de la pregunta
@@ -632,8 +657,8 @@ public class DataAccess {
 		Question que= eventos.get(0);
 		return que;
 	}
-	
-	
+
+
 	/**
 	 * Dado el numero de la pregunta, la busca y la devuelve
 	 * @param nu numero de la pregunta
@@ -646,8 +671,8 @@ public class DataAccess {
 		Question que= eventos.get(0);
 		return que;
 	}
-	
-	
+
+
 	/**
 	 * Devuelve un vector de Usuario con todos los usuarios de la base de datos
 	 * @return
@@ -663,7 +688,7 @@ public class DataAccess {
 		return res;
 	}
 
-	
+
 	/**
 	 * Dado el numero del pronostico, lo busca y lo devuelve
 	 * @param pronosticoNumber numero del pronostico
@@ -673,7 +698,7 @@ public class DataAccess {
 		return db.find(Pronostico.class, pronosticoNumber);
 	}
 
-	
+
 	/**
 	 * Dado un pronostico, una cantidad y un usuario, crea la apuesta, la guarda y la asigna a usuario
 	 * @param pronostico
@@ -690,7 +715,7 @@ public class DataAccess {
 		db.getTransaction().commit();
 	}
 
-	
+
 	/**
 	 * Dado un usuario y un Mensaje, le añade el mensaje al usuario
 	 * @param mensaje
@@ -704,7 +729,7 @@ public class DataAccess {
 		db.getTransaction().commit();
 	}
 
-	
+
 	/**
 	 * Valida el pronostico dado, da el dinero a las apuestas que han ganado 
 	 * @param pronostico
@@ -728,7 +753,7 @@ public class DataAccess {
 		}
 	}	
 
-	
+
 	/**
 	 * Dada una apuesta la elimina
 	 * @param ap
@@ -743,7 +768,7 @@ public class DataAccess {
 
 	}
 
-	
+
 	/**
 	 * Dado un vector de apuestas, se las asigna al usuario
 	 * @param aps
@@ -757,7 +782,7 @@ public class DataAccess {
 		db.getTransaction().commit();
 	}
 
-	
+
 	/**
 	 * Dado un usuario y una string, le actualiza la contraeña a ese string
 	 * @param u
@@ -770,8 +795,8 @@ public class DataAccess {
 		db.persist(usu);
 		db.getTransaction().commit();
 	}
-	
-	
+
+
 	/**
 	 * Dada la pregunta la elimina
 	 * @param q
@@ -817,7 +842,7 @@ public class DataAccess {
 		return res;
 	}
 
-	
+
 	/**
 	 * Devuelve una lista con los distintos mensajes existentes 
 	 * @return
@@ -828,8 +853,8 @@ public class DataAccess {
 		List<Mensaje> mensajes = query.getResultList();
 		return mensajes;
 	}
-	
-	
+
+
 	/**
 	 * Dado una pregunta, elimina todas las apuestas que haya sobre ella
 	 * @param q
@@ -847,8 +872,8 @@ public class DataAccess {
 		}
 		db.getTransaction().commit();
 	}
-	
-	
+
+
 	/**
 	 * Dado un pronostico lo elimina
 	 * @param q
@@ -871,8 +896,8 @@ public class DataAccess {
 		db.getTransaction().commit();
 		return 1;
 	}
-	
-	
+
+
 	/**
 	 * Dado un evento lo elimina
 	 * @param q
@@ -888,7 +913,7 @@ public class DataAccess {
 		return 1;
 	}
 
-	
+
 	/**
 	 * Comprueba si un evento tiene apuestas
 	 * @param ev
@@ -906,7 +931,7 @@ public class DataAccess {
 		return false;
 	}
 
-	
+
 	/**
 	 * Dado un usuario y un string añade, crea el mensaje y lo almacena 
 	 * @param user
@@ -921,7 +946,7 @@ public class DataAccess {
 		db.getTransaction().commit();
 	}
 
-	
+
 	/**
 	 * Dada una descripcion, obtiene la categoria cuya descripcion coincida con el string dado
 	 * @param description
@@ -933,8 +958,8 @@ public class DataAccess {
 		List<Categoria> categorias = query.getResultList();
 		return categorias.get(0);
 	}
-	
-	
+
+
 	/**
 	 * Devuelve las fechas en los que hay eventos de una categoria en especial
 	 * @param date
@@ -948,15 +973,15 @@ public class DataAccess {
 		Date lastDayMonthDate = UtilDate.lastDayMonth(date);
 
 		TypedQuery<Event> query = db.createQuery("SELECT p FROM Event p", Event.class);
-		
+
 		List<Event> eventos = query.getResultList();
-	
+
 		TypedQuery<Date> query1 = db.createQuery(
 				"SELECT DISTINCT ev.eventDate FROM Event ev WHERE ev.eventDate BETWEEN ?1 and ?2", Date.class);
 		query1.setParameter(1, firstDayMonthDate);
 		query1.setParameter(2, lastDayMonthDate);
 		List<Date> fechas = query1.getResultList();
-		
+
 		//miramos entre todos los eventos, que coincidan con los eventos con las fechas buenas
 		Vector<Event> eventosFechas = new Vector<Event>();
 		for(Event e: eventos) {
@@ -966,7 +991,7 @@ public class DataAccess {
 				}
 			}
 		}
-		
+
 		// miramos los eventos con las fechas buenas que coincidan con la
 		// categoría
 		Vector<Date> dates = new Vector<Date>();
@@ -975,7 +1000,7 @@ public class DataAccess {
 				dates.add(e.getEventDate());
 			}
 		}
-		
+
 		for (Date d : dates) {
 			res.add(d);
 		}

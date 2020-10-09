@@ -44,10 +44,12 @@ public class LoginGUI extends JFrame {
 	private JLabel lblNewLabel_2 =null;
 	private JLabel lblNewLabel_3 =null;
 	private JLabel lblError=null;
+	
+	private static BLFacade businessLogic;
+
 	public static BLFacade getBusinessLogic() {
 		return businessLogic;
 	}
-	private static BLFacade businessLogic;
 	
 	public static void setBusinessLogic(BLFacade bLogic) {
 		businessLogic = bLogic;
@@ -75,7 +77,7 @@ public class LoginGUI extends JFrame {
 	 * Create the frame.
 	 */
 	public LoginGUI() {
-		//this.initialize();
+		this.initialize();
 		//businessLogic = new BLFacadeImplementation(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
