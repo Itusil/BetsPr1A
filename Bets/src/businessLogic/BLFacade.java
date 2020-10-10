@@ -15,7 +15,9 @@ import domain.Pronostico;
 //import domain.Booking;
 import domain.Question;
 import domain.Usuario;
+import exceptions.EventAlreadyExist;
 import exceptions.EventFinished;
+import exceptions.FechaPasada;
 import exceptions.QuestionAlreadyExist;
 
 /**
@@ -93,8 +95,10 @@ public interface BLFacade  {
      * @param description
      * @param eventDate
      * @param ca
+     * @throws EventAlreadyExist 
+     * @throws FechaPasada 
      */
-    public void createEvent(String description, Date eventDate, Categoria ca);
+    public void createEvent(String description, Date eventDate, Categoria ca) throws FechaPasada, EventAlreadyExist;
     
     
     /**

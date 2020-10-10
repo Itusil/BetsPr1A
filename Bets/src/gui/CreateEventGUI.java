@@ -32,6 +32,8 @@ import configuration.UtilDate;
 import domain.Categoria;
 import domain.Event;
 import domain.Question;
+import exceptions.EventAlreadyExist;
+import exceptions.FechaPasada;
 
 import javax.swing.JComboBox;
 
@@ -85,8 +87,19 @@ public class CreateEventGUI extends JFrame {
 				int year =c.get(Calendar.YEAR);
 				Date fecha = UtilDate.newDate(year,month,day.getDay());
 				Categoria ca= (Categoria) comboBoxCate.getSelectedItem();
-				businessLogic.createEvent(jTextFieldQuery.getText(), fecha, ca);
-				lblNewLabel.setVisible(true);
+				try {
+					businessLogic.createEvent(jTextFieldQuery.getText(), fecha, ca);
+					lblNewLabel.setForeground(Color.green);
+					lblNewLabel.setVisible(true);
+				}catch(FechaPasada e1) {
+					lblNewLabel.setForeground(Color.red);
+					lblNewLabel.setText(e1.getLocalizedMessage());
+					lblNewLabel.setVisible(true);
+				}catch (EventAlreadyExist e2) {
+					lblNewLabel.setForeground(Color.red);
+					lblNewLabel.setText(e2.getLocalizedMessage());
+					lblNewLabel.setVisible(true);
+				}
 				}
 			}
 		});
@@ -119,7 +132,7 @@ public class CreateEventGUI extends JFrame {
 		
 		lblNewLabel = new JLabel(ResourceBundle.getBundle("Etiquetas").getString("EveCre")); //$NON-NLS-1$ //$NON-NLS-2$
 		lblNewLabel.setHorizontalAlignment(SwingConstants.RIGHT);
-		lblNewLabel.setBounds(160, 266, 105, 16);
+		lblNewLabel.setBounds(100, 266, 165, 16);
 		lblNewLabel.setVisible(false);
 		getContentPane().add(lblNewLabel);
 		lblNewLabel.setForeground(Color.green);

@@ -17,7 +17,9 @@ import domain.Mensaje;
 import domain.Pronostico;
 import domain.Question;
 import domain.Usuario;
+import exceptions.EventAlreadyExist;
 import exceptions.EventFinished;
+import exceptions.FechaPasada;
 import exceptions.QuestionAlreadyExist;
 
 /**
@@ -130,9 +132,11 @@ public class BLFacadeImplementation  implements BLFacade {
 	 * @param description
 	 * @param eventDate
 	 * @param ca
+	 * @throws EventAlreadyExist 
+	 * @throws FechaPasada 
 	 */
 	@Override
-	public void createEvent(String description, Date eventDate, Categoria ca) {
+	public void createEvent(String description, Date eventDate, Categoria ca) throws FechaPasada, EventAlreadyExist {
 		dbManager.open (false);
 		dbManager.createEvent(description, eventDate, ca);
 		dbManager.close();

@@ -22,7 +22,7 @@ public class ApplicationLauncher {
 		try {
 			BLFacade appFacadeInterface;
 			UIManager.setLookAndFeel("javax.swing.plaf.metal.MetalLookAndFeel");
-			//if (c.isBusinessLogicLocal()) { Lo comento porque siempre trabajaremos con local
+			//if (c.isBusinessLogicLocal()) {// Lo comento porque siempre trabajaremos con local
 				DataAccess da= new DataAccess(c.getDataBaseOpenMode().equals("initialize"));
 				appFacadeInterface=new BLFacadeImplementation(da);
 			//	}

@@ -23,6 +23,8 @@ import domain.Mensaje;
 import domain.Pronostico;
 import domain.Question;
 import domain.Usuario;
+import exceptions.EventAlreadyExist;
+import exceptions.FechaPasada;
 import exceptions.QuestionAlreadyExist;
 
 /**
@@ -413,37 +415,36 @@ public class DataAccess {
 
 	}
 
-
 	/**
-	 * Devuelve las fechas en los que hay eventos de una categoria en especial
-	 * @param date
-	 * @param cat
-	 * @return
+	 * Busca un evento y si no existe, lo crea. Si la fecha es anterio
+	 * @param description
+	 * @param eventDate
+	 * @param ca
+	 * @throws FechaPasada
+	 * @throws EventAlreadyExist 
 	 */
-	public void createEvent(String description, Date eventDate, Categoria ca) {
+	public void createEvent(String description, Date eventDate, Categoria ca) throws FechaPasada, EventAlreadyExist {
 		System.out.println(">> DataAccess: createEvent=> description= " + description + " eventDate=" + eventDate);
 
-		boolean t = false;
-
-		TypedQuery<Event> query = db.createQuery("SELECT e FROM Event e WHERE e.description='" + description + "'",
-				Event.class);
+		Date hoy = Calendar.getInstance().getTime();
+		if(eventDate.compareTo(hoy)<0) {
+			throw new FechaPasada("La fecha es anterior a hoy");
+		}
+		TypedQuery<Event> query = db.createQuery("SELECT e FROM Event e WHERE e.description='" + description + "'",Event.class);
 		List<Event> eventos = query.getResultList();
 		for (Event e : eventos) {
 			if (e.getEventDate().equals(eventDate)) {
-				t = true;
+				System.out.println("Evento no creado");
+				throw new EventAlreadyExist("ERROR: El evento ya existe");
 			}
 		}
-
-		if (!t) {
 			db.getTransaction().begin();
-
 			Categoria c=db.find(Categoria.class, ca.getCatNumber());
 			Event e = new Event(description, eventDate, ca);
 			c.addEvent(e);
 			db.persist(e);
 			db.getTransaction().commit();
-		}
-
+			System.out.println("Evento creado");
 	}
 
 
