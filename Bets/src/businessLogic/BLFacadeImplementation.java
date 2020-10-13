@@ -136,10 +136,11 @@ public class BLFacadeImplementation  implements BLFacade {
 	 * @throws FechaPasada 
 	 */
 	@Override
-	public void createEvent(String description, Date eventDate, Categoria ca) throws FechaPasada, EventAlreadyExist {
+	public Event createEvent(String description, Date eventDate, Categoria ca) throws FechaPasada, EventAlreadyExist {
 		dbManager.open (false);
-		dbManager.createEvent(description, eventDate, ca);
+		Event evento= dbManager.createEvent(description, eventDate, ca);
 		dbManager.close();
+		return evento;
 	}
 
 
