@@ -34,7 +34,7 @@ public class CreateEventTest {
 	public void setUp() {
 		MockitoAnnotations.initMocks(this);
 	}	
-	
+
 	@Test
 	@DisplayName("Fecha pasada")
 	public void test1() {
@@ -49,7 +49,7 @@ public class CreateEventTest {
 			fail("Error con el parse");
 		}
 	}
-	
+
 	@Test
 	@DisplayName("Evento existente")
 	public void test2() {
@@ -63,7 +63,7 @@ public class CreateEventTest {
 			e.printStackTrace();
 		}
 	}
-	
+
 	@Test
 	@DisplayName("Todo correcto")
 	public void test3() {
@@ -74,8 +74,8 @@ public class CreateEventTest {
 			Event e = new Event(s1,d1,ca);
 			Mockito.doReturn(e).when(dataAccess).createEvent(s1, d1, ca);
 			assertEquals(e, sut.createEvent(s1, d1, ca));
-			}catch(Exception e) {
-				fail();
-			}
-}
+		}catch(Exception e) {
+			fail();
+		}
+	}
 }
