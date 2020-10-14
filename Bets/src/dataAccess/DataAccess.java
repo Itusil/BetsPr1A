@@ -1008,6 +1008,11 @@ public class DataAccess {
 		}
 		return res;
 	}
+	
+	
+	public int decuelveCinco() {
+		return 5;
+	}
 
 }
 
