@@ -21,6 +21,7 @@ import domain.Categoria;
 import domain.Event;
 import exceptions.EventAlreadyExist;
 import exceptions.FechaPasada;
+import exceptions.QuestionAlreadyExist;
 
 public class CreateEventTest {
 	DataAccess dataAccess = Mockito.mock(DataAccess.class);
@@ -42,7 +43,7 @@ public class CreateEventTest {
 			String s1 = "Real-Barsa";
 			d1 = sdf.parse("21/05/2019");
 			Categoria ca= new Categoria("Futbol");
-			Mockito.doThrow(FechaPasada.class).when(dataAccess).createEvent(Mockito.anyString(), d1, ca);
+			Mockito.doThrow(FechaPasada.class).when(dataAccess).createEvent(s1, d1, ca);
 			assertThrows(FechaPasada.class,() -> sut.createEvent(s1, d1, ca));
 		} catch (ParseException | FechaPasada | EventAlreadyExist e) {
 			fail("Error con el parse");
@@ -56,7 +57,7 @@ public class CreateEventTest {
 		try {
 			Date d1 = sdf.parse("17/11/2020");
 			Categoria ca= new Categoria("Futbol");
-			Mockito.doThrow(EventAlreadyExist.class).when(dataAccess).createEvent(Mockito.anyString(), Mockito.any(Date.class), Mockito.any(Categoria.class));
+			Mockito.doThrow(EventAlreadyExist.class).when(dataAccess).createEvent(s1, d1,ca);
 			assertThrows(EventAlreadyExist.class, () -> sut.createEvent(s1, d1, ca));
 		} catch (ParseException | FechaPasada | EventAlreadyExist e) {
 			e.printStackTrace();
