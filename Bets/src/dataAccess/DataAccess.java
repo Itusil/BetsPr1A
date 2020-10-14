@@ -423,7 +423,7 @@ public class DataAccess {
 	 * @throws FechaPasada
 	 * @throws EventAlreadyExist 
 	 */
-	public void createEvent(String description, Date eventDate, Categoria ca) throws FechaPasada, EventAlreadyExist {
+	public Event createEvent(String description, Date eventDate, Categoria ca) throws FechaPasada, EventAlreadyExist {
 		System.out.println(">> DataAccess: createEvent=> description= " + description + " eventDate=" + eventDate);
 
 		Date hoy = Calendar.getInstance().getTime();
@@ -445,6 +445,7 @@ public class DataAccess {
 			db.persist(e);
 			db.getTransaction().commit();
 			System.out.println("Evento creado");
+			return e;
 	}
 
 

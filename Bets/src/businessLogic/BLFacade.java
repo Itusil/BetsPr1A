@@ -95,10 +95,11 @@ public interface BLFacade  {
      * @param description
      * @param eventDate
      * @param ca
-     * @throws EventAlreadyExist 
-     * @throws FechaPasada 
+     * @return El evento creado
+     * @throws FechaPasada
+     * @throws EventAlreadyExist
      */
-    public void createEvent(String description, Date eventDate, Categoria ca) throws FechaPasada, EventAlreadyExist;
+    public Event createEvent(String description, Date eventDate, Categoria ca) throws FechaPasada, EventAlreadyExist;
     
     
     /**
