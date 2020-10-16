@@ -30,7 +30,6 @@ public class CreateEventDataAccessTest {
 
 	private String s1="Real-Barsa";
 	private Date d1;
-	//private Categoria ca= new Categoria ("Futbol");
 	
 	@BeforeEach
 	public void setUp() {
@@ -81,7 +80,6 @@ public class CreateEventDataAccessTest {
 			s1="Getafe-Celta";
 			d1=sdf.parse("17/11/2020");
 			Categoria ca = sut.obtenerCategoria("Futbol");
-			//Event e = sut.createEvent(s1, d1, ca);
 			assertThrows(EventAlreadyExist.class, () -> sut.createEvent(s1, d1, ca));
 		}catch (ParseException e) {
 			fail("Error con el parse");

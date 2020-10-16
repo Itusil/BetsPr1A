@@ -451,14 +451,12 @@ public class DataAccess {
 	}
 	
 	public Categoria obtenerCategoria(String s) {
-//		TypedQuery<Categoria> query = db.createQuery("SELECT ca FROM Categoria ca WHERE ca.description='" + s + "'",Categoria.class);
-//		List<Categoria> cats = query.getResultList();
-//		for( Categoria ca: cats) {
-//			return ca;
-//		}
-//		return null;
-		Categoria ca = db.find(Categoria.class, 1);
-		return ca;
+		TypedQuery<Categoria> query = db.createQuery("SELECT ca FROM Categoria ca WHERE ca.description='" + s + "'",Categoria.class);
+		List<Categoria> cats = query.getResultList();
+		for( Categoria ca: cats) {
+			return ca;
+		}
+		return null;
 	}
 
 
