@@ -79,6 +79,7 @@ public class DataAccess {
 		//if (c.isDatabaseLocal()) {
 			emf = Persistence.createEntityManagerFactory("objectdb:"+fileName);
 			db = emf.createEntityManager();
+			System.out.println("DataBase created");
 //		} else {
 //			Map<String, String> properties = new HashMap<String, String>();
 //			properties.put("javax.persistence.jdbc.user", c.getUser());
@@ -431,6 +432,7 @@ public class DataAccess {
 			throw new FechaPasada("La fecha es anterior a hoy");
 		}
 		TypedQuery<Event> query = db.createQuery("SELECT e FROM Event e WHERE e.description='" + description + "'",Event.class);
+		//TypedQuery<Event> query = db.createQuery("SELECT e FROM Event e",Event.class);
 		List<Event> eventos = query.getResultList();
 		for (Event e : eventos) {
 			if (e.getEventDate().equals(eventDate)) {
@@ -446,6 +448,17 @@ public class DataAccess {
 			db.getTransaction().commit();
 			System.out.println("Evento creado");
 			return e;
+	}
+	
+	public Categoria obtenerCategoria(String s) {
+//		TypedQuery<Categoria> query = db.createQuery("SELECT ca FROM Categoria ca WHERE ca.description='" + s + "'",Categoria.class);
+//		List<Categoria> cats = query.getResultList();
+//		for( Categoria ca: cats) {
+//			return ca;
+//		}
+//		return null;
+		Categoria ca = db.find(Categoria.class, 1);
+		return ca;
 	}
 
 
