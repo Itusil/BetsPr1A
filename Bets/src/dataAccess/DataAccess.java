@@ -432,7 +432,6 @@ public class DataAccess {
 			throw new FechaPasada("La fecha es anterior a hoy");
 		}
 		TypedQuery<Event> query = db.createQuery("SELECT e FROM Event e WHERE e.description='" + description + "'",Event.class);
-		//TypedQuery<Event> query = db.createQuery("SELECT e FROM Event e",Event.class);
 		List<Event> eventos = query.getResultList();
 		for (Event e : eventos) {
 			if (e.getEventDate().equals(eventDate)) {

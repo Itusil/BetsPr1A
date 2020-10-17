@@ -1,6 +1,6 @@
 package testJunit;
 
-import static org.junit.Assert.fail;
+import static org.junit.jupiter.api.Assertions.fail;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
@@ -8,6 +8,8 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -25,9 +27,11 @@ import exceptions.QuestionAlreadyExist;
 
 public class CreateEventTest {
 	DataAccess dataAccess = Mockito.mock(DataAccess.class);
-	//Event mockedEvent = Mockito.mock(Event.class);
+	Event mockedEvent = Mockito.mock(Event.class);
+	DataAccess daoSinMock = new DataAccess(false);
 
 	BLFacade sut = new BLFacadeImplementation(dataAccess);
+	BLFacade sutSinMock = new BLFacadeImplementation(daoSinMock);
 	private SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
 	@BeforeEach
@@ -43,9 +47,8 @@ public class CreateEventTest {
 			String s1 = "Real-Barsa";
 			d1 = sdf.parse("21/05/2019");
 			Categoria ca= new Categoria("Futbol");
-			Mockito.doThrow(FechaPasada.class).when(dataAccess).createEvent(s1, d1, ca);
-			assertThrows(FechaPasada.class,() -> sut.createEvent(s1, d1, ca));
-		} catch (ParseException | FechaPasada | EventAlreadyExist e) {
+			assertThrows(FechaPasada.class, () -> sutSinMock.createEvent(s1, d1, ca));
+		} catch (ParseException e) {
 			fail("Error con el parse");
 		}
 	}
