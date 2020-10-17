@@ -25,13 +25,15 @@ import exceptions.EventAlreadyExist;
 import exceptions.FechaPasada;
 import exceptions.QuestionAlreadyExist;
 
-public class CreateEventTest {
+public class CreateEventTest { 
+	//Para trabajar con Mockito
 	DataAccess dataAccess = Mockito.mock(DataAccess.class);
-	Event mockedEvent = Mockito.mock(Event.class);
-	DataAccess daoSinMock = new DataAccess(false);
-
 	BLFacade sut = new BLFacadeImplementation(dataAccess);
+	
+	//Para trabajar sin Mockito
+	DataAccess daoSinMock = new DataAccess(false);
 	BLFacade sutSinMock = new BLFacadeImplementation(daoSinMock);
+	
 	private SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
 	@BeforeEach
