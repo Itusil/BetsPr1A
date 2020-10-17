@@ -1,9 +1,0 @@
-
- addons:
- sonarcloud:
- organization: "lab01is2-iturria-silveti-mikel"
- token: "d394106a1e77e1d0a4693e94aec72587b110a010"
-script:
- # the following command line builds the project, runs the tests with coverage
- # and then execute the SonarCloud analysis
- - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install org.jacoco:jacoco-maven-plugin:report install sonar:sonar
