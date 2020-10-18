@@ -20,6 +20,7 @@ import domain.Usuario;
 import exceptions.EventAlreadyExist;
 import exceptions.EventFinished;
 import exceptions.FechaPasada;
+import exceptions.NumPreguntaNegativo;
 import exceptions.QuestionAlreadyExist;
 
 /**
@@ -43,6 +44,8 @@ public class BLFacadeImplementation  implements BLFacade {
 //			new BLFacadeImplementation();
 //		}
 
+	
+		
 
 	public BLFacadeImplementation(DataAccess da) {
 		System.out.println("Creating BLFacadeImplementation instance with DataAccess parameter");
@@ -222,7 +225,12 @@ public class BLFacadeImplementation  implements BLFacade {
 	 * @return
 	 */
 	@Override
-	public Vector<domain.Pronostico> obtenerPronostico(int j) {
+	public Vector<domain.Pronostico> obtenerPronostico(int j) throws NumPreguntaNegativo{
+		
+		if(j<0) {
+			throw new NumPreguntaNegativo("Numero de pregunta negativo. ERROR");
+		}
+		
 		dbManager.open (false);
 		Vector<domain.Pronostico> pron = dbManager.obtenerPronostico(j);
 		dbManager.close();
