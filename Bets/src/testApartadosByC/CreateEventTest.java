@@ -1,4 +1,4 @@
-package testJunit;
+package testApartadosByC;
 
 import static org.junit.jupiter.api.Assertions.fail;
 import static org.junit.jupiter.api.Assertions.assertEquals;

@@ -1,4 +1,4 @@
-package testJunit;
+package testApartadosByC;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
