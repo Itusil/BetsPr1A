@@ -32,7 +32,7 @@ class BLPronosticoMockTest {
 	DataAccess dataAccess = Mockito.mock(DataAccess.class);
 	Event mockedEvent = Mockito.mock(Event.class);
 
-	@Mock
+	
 	BLFacade sut = new BLFacadeImplementation(dataAccess);
 
 	// sut.createQuestion: The event has one question with a queryText.
@@ -41,15 +41,14 @@ class BLPronosticoMockTest {
 	
 	@BeforeEach
 	public void setUp() {
-		MockitoAnnotations.initMocks(this);
+		MockitoAnnotations.initMocks(dataAccess);
 		
 	}
 	
-	
+	 
 	@Test
 	@DisplayName("Test 1")
 	public void test1() throws NumPreguntaNegativo {
-		Mockito.doThrow(NumPreguntaNegativo.class).when(sut).obtenerPronostico(-3);
 		assertThrows(NumPreguntaNegativo.class,  ()-> sut.obtenerPronostico(-3));
 	}
 	
@@ -67,7 +66,7 @@ class BLPronosticoMockTest {
 	
 		
 		
-		Mockito.doReturn(sol).when(sut).obtenerPronostico(0);
+		Mockito.doReturn(sol).when(dataAccess).obtenerPronostico(0);
 		
 		
 		assertNotNull(q);
