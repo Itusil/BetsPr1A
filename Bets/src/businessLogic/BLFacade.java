@@ -18,6 +18,7 @@ import domain.Usuario;
 import exceptions.EventAlreadyExist;
 import exceptions.EventFinished;
 import exceptions.FechaPasada;
+import exceptions.NoExistCategory;
 import exceptions.QuestionAlreadyExist;
 
 /**
@@ -275,12 +276,13 @@ public interface BLFacade  {
 	
 	
 	/**
-	 * Devuelve las fechas en los que hay eventos de una categoria en especial
-	 * @param date
-	 * @param cat
-	 * @return
-	 */
-	public Vector<Date> getEventsCategoryMonth(Date date, Categoria cat);
+	 * Devuelve las fechas en las que hay eventos de una categoría en especial
+	 * @param date con esta fecha le indicamos el mes en el que tiene que buscar eventos
+	 * @param cat los eventos a buscar tienen que ser de esta categoría
+	 * @return las fechas en las que hay eventos de una categoría en especial
+	 * @throws NoExistCategory si la categoría no existe o es null
+	 */	
+	public Vector<Date> getEventsCategoryMonth(Date date, Categoria cat)throws NoExistCategory;
 
 }
 	

@@ -31,6 +31,7 @@ import domain.Categoria;
 import domain.Event;
 import domain.Usuario;
 import exceptions.EventFinished;
+import exceptions.NoExistCategory;
 import exceptions.QuestionAlreadyExist;
 
 public class CreateQuestionGUI extends JFrame {
@@ -195,7 +196,13 @@ public class CreateQuestionGUI extends JFrame {
 	//por el usuario
 	public static void paintDaysWithEventsAndCategory(JCalendar jCalendar,Categoria cat) {
 		BLFacade facade = LoginGUI.getBusinessLogic();
-		Vector<Date> dates=facade.getEventsCategoryMonth(jCalendar.getDate(), cat);
+		Vector<Date> dates = null;
+		try {
+			dates = facade.getEventsCategoryMonth(jCalendar.getDate(), cat);
+		} catch (NoExistCategory e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		Calendar calendar = jCalendar.getCalendar();
 		int month = calendar.get(Calendar.MONTH);
 		int today=calendar.get(Calendar.DAY_OF_MONTH);
