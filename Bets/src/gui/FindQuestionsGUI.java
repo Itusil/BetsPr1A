@@ -42,6 +42,7 @@ import domain.Categoria;
 import domain.Pronostico;
 import domain.Question;
 import domain.Usuario;
+import exceptions.NumPreguntaNegativo;
 
 
 public class FindQuestionsGUI extends JFrame {
@@ -224,7 +225,12 @@ public class FindQuestionsGUI extends JFrame {
 																							// question
 																							// object
 				BLFacade facade = LoginGUI.getBusinessLogic();
-				pronosticos = facade.obtenerPronostico(que);
+				try {
+					pronosticos = facade.obtenerPronostico(que);
+				} catch (NumPreguntaNegativo e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
 				pronosticoList.removeAllElements();
 				for (domain.Pronostico q:pronosticos){
 					pronosticoList.addElement(q.imprimir());

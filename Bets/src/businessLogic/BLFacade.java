@@ -19,6 +19,7 @@ import exceptions.EventAlreadyExist;
 import exceptions.EventFinished;
 import exceptions.FechaPasada;
 import exceptions.NoExistCategory;
+import exceptions.NumPreguntaNegativo;
 import exceptions.QuestionAlreadyExist;
 
 /**
@@ -129,8 +130,9 @@ public interface BLFacade  {
 	 * Dado un numero de pregunta, obtiene sus pronosticos
 	 * @param j
 	 * @return
+	 * @throws NumPreguntaNegativo 
 	 */
-	public Vector<domain.Pronostico> obtenerPronostico(int j);
+	public Vector<domain.Pronostico> obtenerPronostico(int j) throws NumPreguntaNegativo;
 	
 	
 	/**
