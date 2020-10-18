@@ -21,7 +21,7 @@ import test.businessLogic.TestFacadeImplementation;
 
 class GetEventsCategoryMonthDATest {
 
-	private DataAccess sut = new DataAccess(true);
+	private DataAccess sut = new DataAccess(false);
 	private TestFacadeImplementation testBL = new TestFacadeImplementation();
 	
 	@Test

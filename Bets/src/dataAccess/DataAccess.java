@@ -415,6 +415,52 @@ public class DataAccess {
 		return q;
 
 	}
+	/**
+	 * Devuelve las fechas en las que hay eventos de una categoría en especial
+	 * @param date con esta fecha le indicamos el mes en el que tiene que buscar eventos
+	 * @param cat los eventos a buscar tienen que ser de esta categoría
+	 * @return las fechas en las que hay eventos de una categoría en especial
+	 */	
+	public Vector<Date> getEventsCategoryMonth(Date date, Categoria cat) {
+		Vector<Date> res = new Vector<Date>();
+
+		Date firstDayMonthDate = UtilDate.firstDayMonth(date);
+		Date lastDayMonthDate = UtilDate.lastDayMonth(date);
+
+		TypedQuery<Event> query = db.createQuery("SELECT p FROM Event p", Event.class);
+
+		List<Event> eventos = query.getResultList();
+
+		TypedQuery<Date> query1 = db.createQuery(
+				"SELECT DISTINCT ev.eventDate FROM Event ev WHERE ev.eventDate BETWEEN ?1 and ?2", Date.class);
+		query1.setParameter(1, firstDayMonthDate);
+		query1.setParameter(2, lastDayMonthDate);
+		List<Date> fechas = query1.getResultList();
+
+		//miramos entre todos los eventos, que coincidan con los eventos con las fechas buenas
+		Vector<Event> eventosFechas = new Vector<Event>();
+		for(Event e: eventos) {
+			for(Date fecha: fechas) {
+				if(e.getEventDate().compareTo(fecha) == 0) {
+					eventosFechas.add(e);
+				}
+			}
+		}
+
+		// miramos los eventos con las fechas buenas que coincidan con la
+		// categorÃ­a
+		Vector<Date> dates = new Vector<Date>();
+		for(Event e: eventosFechas) {
+			if(e.getCat().getDescription().equals(cat.getDescription())) {
+				dates.add(e.getEventDate());
+			}
+		}
+
+		for (Date d : dates) {
+			res.add(d);
+		}
+		return res;
+	}
 
 	/**
 	 * Busca un evento y si no existe, lo crea. Si la fecha es anterio
@@ -972,52 +1018,7 @@ public class DataAccess {
 	}
 
 
-	/**
-	 * Devuelve las fechas en las que hay eventos de una categoría en especial
-	 * @param date con esta fecha le indicamos el mes en el que tiene que buscar eventos
-	 * @param cat los eventos a buscar tienen que ser de esta categoría
-	 * @return las fechas en las que hay eventos de una categoría en especial
-	 */	
-	public Vector<Date> getEventsCategoryMonth(Date date, Categoria cat) {
-		Vector<Date> res = new Vector<Date>();
 
-		Date firstDayMonthDate = UtilDate.firstDayMonth(date);
-		Date lastDayMonthDate = UtilDate.lastDayMonth(date);
-
-		TypedQuery<Event> query = db.createQuery("SELECT p FROM Event p", Event.class);
-
-		List<Event> eventos = query.getResultList();
-
-		TypedQuery<Date> query1 = db.createQuery(
-				"SELECT DISTINCT ev.eventDate FROM Event ev WHERE ev.eventDate BETWEEN ?1 and ?2", Date.class);
-		query1.setParameter(1, firstDayMonthDate);
-		query1.setParameter(2, lastDayMonthDate);
-		List<Date> fechas = query1.getResultList();
-
-		//miramos entre todos los eventos, que coincidan con los eventos con las fechas buenas
-		Vector<Event> eventosFechas = new Vector<Event>();
-		for(Event e: eventos) {
-			for(Date fecha: fechas) {
-				if(e.getEventDate().compareTo(fecha) == 0) {
-					eventosFechas.add(e);
-				}
-			}
-		}
-
-		// miramos los eventos con las fechas buenas que coincidan con la
-		// categorÃ­a
-		Vector<Date> dates = new Vector<Date>();
-		for(Event e: eventosFechas) {
-			if(e.getCat().getDescription().equals(cat.getDescription())) {
-				dates.add(e.getEventDate());
-			}
-		}
-
-		for (Date d : dates) {
-			res.add(d);
-		}
-		return res;
-	}
 
 }
 
