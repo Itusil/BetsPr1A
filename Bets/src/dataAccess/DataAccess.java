@@ -973,10 +973,10 @@ public class DataAccess {
 
 
 	/**
-	 * Devuelve las fechas en los que hay eventos de una categoria en especial
-	 * @param date
-	 * @param cat
-	 * @return
+	 * Devuelve las fechas en las que hay eventos de una categoría en especial
+	 * @param date con esta fecha le indicamos el mes en el que tiene que buscar eventos
+	 * @param cat los eventos a buscar tienen que ser de esta categoría
+	 * @return las fechas en las que hay eventos de una categoría en especial
 	 */	
 	public Vector<Date> getEventsCategoryMonth(Date date, Categoria cat) {
 		Vector<Date> res = new Vector<Date>();

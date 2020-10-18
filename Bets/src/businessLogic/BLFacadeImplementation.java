@@ -20,6 +20,7 @@ import domain.Usuario;
 import exceptions.EventAlreadyExist;
 import exceptions.EventFinished;
 import exceptions.FechaPasada;
+import exceptions.NoExistCategory;
 import exceptions.NumPreguntaNegativo;
 import exceptions.QuestionAlreadyExist;
 
@@ -499,14 +500,18 @@ public class BLFacadeImplementation  implements BLFacade {
 
 
 	/**
-	 * Devuelve las fechas en los que hay eventos de una categoria en especial
-	 * @param date
-	 * @param cat
-	 * @return
-	 */
+	 * Devuelve las fechas en las que hay eventos de una categoría en especial
+	 * @param date con esta fecha le indicamos el mes en el que tiene que buscar eventos
+	 * @param cat los eventos a buscar tienen que ser de esta categoría
+	 * @return las fechas en las que hay eventos de una categoría en especial
+	 * @throws NoExistCategory si la categoría no existe o es null
+	 */	
 	@Override
-	public Vector<Date> getEventsCategoryMonth(Date date, Categoria cat) {
+	public Vector<Date> getEventsCategoryMonth(Date date, Categoria cat) throws NoExistCategory {
 		dbManager.open (false);
+		if(cat == null || obtenerCategoriaPorDescripcion(cat.getDescription()) == null) {
+			throw new NoExistCategory();
+		}
 		Vector<Date> dates = dbManager.getEventsCategoryMonth(date, cat);
 		dbManager.close();
 		return dates;
